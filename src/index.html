@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular Eksempel</title>
+</head>
+
+<body>
+    <h1>Køb bogen</h1>
+    <form action="#" method="post">
+        <!-- Antal input -->
+        <label for="antal">Antal:</label>
+        <input type="number" id="antal" name="antal" placeholder="Angiv antal" required>
+
+        <!-- Levering input -->
+        <label for="levering1">Levering - Standard:</label>
+        <input type="radio" id="levering1" name="levering" value="PostNord" checked>
+        <label for="levering1">Standard</label>
+
+        <label for="levering2">Levering - Ekspres:</label>
+        <input type="radio" id="levering2" name="levering" value="Afhent selv">
+        <label for="levering2">Ekspres</label>
+
+        <!-- Navn input -->
+        <label for="navn">Navn:</label>
+        <input type="text" id="navn" name="navn" placeholder="Dit navn" required>
+
+        <!-- Adresse input -->
+        <label for="adresse">Adresse:</label>
+        <input type="text" id="adresse" name="adresse" placeholder="Din adresse" required>
+
+        <!-- E-mail input -->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Din e-mail" required>
+
+        <!-- Postnummer input -->
+        <label for="postnummer">Postnummer:</label>
+        <input type="text" id="postnummer" name="postnummer" placeholder="Dit postnummer" required>
+
+        <!-- Bynavn input -->
+        <label for="bynavn">Bynavn:</label>
+        <input type="text" id="bynavn" name="bynavn" placeholder="Din by" disabled>
+
+        <!-- Telefon input -->
+        <label for="telefon">Telefon:</label>
+        <input type="tel" id="telefon" name="telefon" placeholder="Dit telefonnummer">
+
+        <!-- Nyhedsbrev checkbox -->
+        <label for="nyhedsbrev">Tilmeld nyhedsbrev:</label>
+        <input type="checkbox" id="nyhedsbrev" name="nyhedsbrev">
+        <br><br>
+
+        <!-- Submit knap -->
+        <button type="submit">Til betaling</button>
+    </form>
+</body>
+
+</html>
